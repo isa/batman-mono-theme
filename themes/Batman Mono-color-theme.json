@@ -4,6 +4,7 @@
    "colors": {
       "focusBorder": "#38392955",
       "editorCursor.foreground": "#e83551",
+      "editorCursor.background": "#eeffff",
       "editorLineNumber.foreground": "#424242",
       "editor.background": "#131413",
       "editor.foreground": "#eeffff",
