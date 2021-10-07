@@ -4,4 +4,9 @@ A theme inspired from Atom's famous "Mono UI" theme. Nothin fancy here.. Tried t
 
 Still experimenting, therefore I might play with colors over time.
 
+Here are a few screenshots:
+
+![Main Editor](screenshots/01.png)
+![With Panels](screenshots/02.png)
+
 **Enjoy!**
