@@ -2,8 +2,9 @@
    "name": "batman-mono-theme",
    "displayName": "Batman Mono Theme",
    "description": "A theme inspired from Atom's famous \"Mono UI\" theme",
-   "version": "1.0.4",
+   "version": "1.0.5",
    "publisher": "IsaGoksu",
+   "icon": "images/logo.png",
    "keywords": [
       "theme",
       "dark",
