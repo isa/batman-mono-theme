@@ -2,7 +2,7 @@
    "name": "batman-mono-theme",
    "displayName": "Batman Mono Theme",
    "description": "A theme inspired from Atom's famous \"Mono UI\" theme",
-   "version": "1.0.2",
+   "version": "1.0.4",
    "publisher": "IsaGoksu",
    "keywords": [
       "theme",
@@ -15,7 +15,11 @@
       "few colors",
       "less color",
       "easy read",
-      "easy on eye"
+      "easy on eye",
+      "batman",
+      "mono ui",
+      "readable",
+      "readability"
    ],
    "repository": {
       "type": "git",
