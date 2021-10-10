@@ -3,6 +3,8 @@
    "type": "dark",
    "colors": {
       "focusBorder": "#38392955",
+      "editor.selectionBackground": "#e83551",
+      "editor.selectionForeground": "#eeffff",
       "editorCursor.foreground": "#e83551",
       "editorCursor.background": "#eeffff",
       "editorLineNumber.foreground": "#424242",
@@ -51,8 +53,8 @@
       "terminal.foreground": "#717171",
       "terminal.ansiBlue": "#FFE181",
       "terminal.ansiBrightBlue": "#FFE181",
-      "terminal.ansiGreen": "#B3ABE4",
-      "terminal.ansiBrightGreen": "#B3ABE4",
+      "terminal.ansiGreen": "#9f8ff6",
+      "terminal.ansiBrightGreen": "#9f8ff6",
       "terminal.ansiMagenta": "#FFE181",
       "terminal.ansiBrightMagenta": "#FFE181",
       "terminal.ansiCyan": "#FFE181",
@@ -78,16 +80,25 @@
       },
       {
          "name": "Variables",
-         "scope": ["variable", "string constant.other.placeholder"],
+         "scope": [
+            "variable",
+            "string constant.other.placeholder",
+            "entity.name.tag"
+         ],
          "settings": {
             "foreground": "#EEFFFF"
          }
       },
       {
-         "name": "Keyword, Storage",
-         "scope": ["keyword", "storage.type", "storage.modifier"],
+         "name": "Keyword, Storage, Attributes",
+         "scope": [
+            "keyword",
+            "storage.type",
+            "storage.modifier",
+            "entity.other.attribute-name"
+         ],
          "settings": {
-            "foreground": "#919191"
+            "foreground": "#8d99ae"
          }
       },
       {
@@ -103,6 +114,7 @@
          ],
          "settings": {
             "foreground": "#FFE181"
+            // "foreground": "#f5cb5c"
          }
       },
       {
@@ -118,26 +130,36 @@
             "keyword.other"
          ],
          "settings": {
-            "foreground": "#B3ABE4"
+            "foreground": "#9f8ff6"
          }
       },
       {
          "name": "Primitive Types",
          "scope": [
             "meta.type.annotation.ts",
-            "support.type.property-name.json",
-            "entity.name.tag.html",
-            "entity.name.tag.yaml",
             "meta.function-call.generic.python",
             "entity.name.function",
-            "support.function.any-method"
+            "support.function.any-method",
+            "text.html",
+            "text.svelte"
          ],
          "settings": {
             "foreground": "#bcbcbc"
          }
       },
       {
-         "name": "Paranthesis",
+         "name": "JSON, YAML, etc Keys",
+         "scope": [
+            "support.type.property-name.json",
+            "entity.name.tag.yaml",
+            "keyword.other.special-method.dockerfile"
+         ],
+         "settings": {
+            "foreground": "#8d99ae"
+         }
+      },
+      {
+         "name": "Paranthesis & Punctuations",
          "scope": [
             "punctuation.definition.block.begin",
             "punctuation.definition.block.end",
@@ -168,14 +190,17 @@
             "punctuation.section.function.end.bracket.round.css",
             "punctuation.definition.entity.begin.bracket.square.css",
             "punctuation.definition.entity.end.bracket.square.css",
+            "punctuation.definition.tag.begin",
+            "punctuation.definition.tag.end",
             "meta.parameters.ts",
             "meta.arrow.ts",
             "storage.type.annotation",
             "punctuation.definition.annotation",
-            "entity.name.function.decorator"
+            "entity.name.function.decorator",
+            "constant.character.escape"
          ],
          "settings": {
-            "foreground": "#919191"
+            "foreground": "#8d99ae"
          }
       },
       {
@@ -191,7 +216,14 @@
             "keyword.operator.relational"
          ],
          "settings": {
-            "foreground": "#89DDFF"
+            "foreground": "#8d99ae"
+         }
+      },
+      {
+         "name": "Closures",
+         "scope": ["keyword.operator.arrow", "storage.type.function.arrow"],
+         "settings": {
+            "foreground": "#fe6d73"
          }
       }
    ]
