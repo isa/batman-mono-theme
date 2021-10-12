@@ -2,7 +2,7 @@
    "name": "Batman Mono",
    "type": "dark",
    "colors": {
-      "focusBorder": "#38392955",
+      "focusBorder": "#38392933",
       "editor.selectionBackground": "#e83551",
       "editor.selectionForeground": "#eeffff",
       "editorCursor.foreground": "#e83551",
@@ -26,10 +26,10 @@
       "activityBarBadge.background": "#c0bd81",
       "activityBarBadge.foreground": "#0c0d0c",
       "tab.border": "#0c0d0c",
-      "tab.inactiveBackground": "#131413",
+      "tab.inactiveBackground": "#191915",
       "tab.activeBackground": "#131413",
       "tab.activeForeground": "#919188",
-      "tab.activeBorder": "#c0bd81",
+      "tab.activeBorderTop": "#e83551",
       "breadcrumb.foreground": "#919191",
       "sideBar.background": "#0c0c08",
       "sideBar.foreground": "#919191",
@@ -38,7 +38,7 @@
       "sideBarSectionHeader.foreground": "#5a5a5a",
       "panel.background": "#0c0d0c",
       "panel.border": "#060a06",
-      "panelTitle.activeBorder": "#c0bd81",
+      "panelTitle.activeBorder": "#ffaa55",
       "panelTitle.activeForeground": "#ddddcc",
       "list.inactiveSelectionBackground": "#191915",
       "list.inactiveSelectionForeground": "#ddddcc",
@@ -127,10 +127,19 @@
             "constant.escape",
             "variable.parameter",
             "keyword.other.unit",
-            "keyword.other"
+            "keyword.other",
+            "entity.name.type.alias",
+            "entity.name.type.interface"
          ],
          "settings": {
             "foreground": "#9f8ff6"
+         }
+      },
+      {
+         "name": "Types & Interfaces",
+         "scope": ["entity.name.type.alias", "entity.name.type.interface"],
+         "settings": {
+            "foreground": "#ffbb55"
          }
       },
       {
@@ -141,7 +150,8 @@
             "entity.name.function",
             "support.function.any-method",
             "text.html",
-            "text.svelte"
+            "text.svelte",
+            "entity.name.type.module"
          ],
          "settings": {
             "foreground": "#bcbcbc"
